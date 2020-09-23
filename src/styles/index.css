@@ -1,0 +1,20 @@
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(../assets/fonts/roboto-condensed.light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: EconomicaBold;
+  src: url(../assets/fonts/economica-bold.ttf);
+  font-weight: 200;
+}
+
+
+body {
+    text-align: center;
+    font-size: 20px;
+    padding: 2.5%;
+    font-family: 'RobotoCondensed';
+  }
+
