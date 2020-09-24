@@ -16,5 +16,53 @@ body {
     font-size: 20px;
     padding: 2.5%;
     font-family: 'RobotoCondensed';
+    background-color: black;
   }
 
+.title {
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-color: greenyellow;
+  font-weight: bolder;
+  color: aliceblue;
+}
+
+.sub-title {
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: greenyellow;
+  font-weight: bolder;
+  color: aliceblue;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+}
+#navtext{
+  color: greenyellow;
+}
+#navbarDropdownMenuLink{
+  color: greenyellow;
+}
+.link {
+  color: greenyellow;
+  font-size: 25px;
+}
+
+hr {
+  position: relative;
+  height: 7px;
+  background-color: black;
+  border-top: 5px dotted greenyellow;
+  border-bottom: 5px dotted greenyellow;
+  border-radius: 20px;
+}
+
+.icon{
+  background-color: whitesmoke;
+}
+
+@media (max-width: 700px){
+  #icontext {font-size: 10px;}
+}
