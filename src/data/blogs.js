@@ -6,7 +6,6 @@ const PROJECTS = [
     {
         id: 1,
         title: "example React App",
-        stack: 'React',
         description: "A React app built from scratch",
         link: 'https://github.com/15Dkatz/example',
         image: project1
@@ -16,16 +15,14 @@ const PROJECTS = [
         title: "My API",
         description: "A React app built from scratch",
         link: 'https://github.com/15Dkatz/example',
-        image: project2,
-        stack: 'React'
+        image: project2
     },
     {
         id: 3,
         title: "example React App",
         description: "A React app built from scratch",
         link: 'https://github.com/15Dkatz/example',
-        image: project3,
-        stack: 'React'
+        image: project3
     }
 ]
 

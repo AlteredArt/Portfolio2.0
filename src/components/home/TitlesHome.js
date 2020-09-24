@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Title.css'
+import '../../styles/Title.css'
 
 const TITLES = ['Software Engineer!', "Artist!", "Cat Dad!", "Adventure Seeker!"];
 
@@ -7,13 +7,13 @@ class Titles extends Component {
     state = { titleIndex: 0, fadeIn: true }
 
     componentDidMount() {
-        console.log('component did mount')
+        // console.log('component did mount')
         this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000);
         this.animateTitles();
     }
 
-    componentWillUnmount() {
-        console.log('comp will unmount')
+    UNSAFE_componentWillUnmount() {
+        // console.log('comp will unmount')
         clearInterval(this.titleInterval);
         clearTimeout(this.timeout);
     }
@@ -31,7 +31,7 @@ class Titles extends Component {
 
 
         return (
-            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>I am a {title}</p>
+            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'} style={{ color: "greenyellow" }}>I am a {title}</p>
         )
     }
 }
