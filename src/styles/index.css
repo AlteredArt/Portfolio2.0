@@ -10,45 +10,26 @@
   font-weight: 200;
 }
 
-
 body {
     text-align: center;
     font-size: 20px;
     padding: 2.5%;
     font-family: 'RobotoCondensed';
     background-color: black;
-  }
-
-.title {
-  font-size: 50px;
-  text-decoration: underline;
-  text-decoration-color: greenyellow;
-  font-weight: bolder;
-  color: aliceblue;
 }
 
-.sub-title {
-  font-size: 30px;
-  text-decoration: underline;
-  text-decoration-color: greenyellow;
-  font-weight: bolder;
-  color: aliceblue;
-}
 
-.text {
-  color: white;
-  font-size: 20px;
-}
-#navtext{
-  color: greenyellow;
-}
-#navbarDropdownMenuLink{
-  color: greenyellow;
-}
+
+
 .link {
   color: greenyellow;
   font-size: 25px;
+  text-decoration: underline;
 }
+.link:hover{
+  color: whitesmoke;
+}
+
 
 hr {
   position: relative;
@@ -57,12 +38,24 @@ hr {
   border-top: 5px dotted greenyellow;
   border-bottom: 5px dotted greenyellow;
   border-radius: 20px;
+  margin-top: 60px;
 }
 
-.icon{
-  background-color: whitesmoke;
+.profilePic{
+  width: 320px;
+  height: 200px;
+  border-radius: 75px;
 }
 
-@media (max-width: 700px){
-  #icontext {font-size: 10px;}
+.btn{
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+
+.btn-text{
+  margin-left: 20px;
+
+}
+.pro-btn{
+  margin: 5px;
 }

@@ -1,0 +1,13 @@
+#navtext{
+    color: greenyellow;
+    text-decoration: underline;
+  }
+  #navbarDropdownMenuLink{
+    color: greenyellow;
+    text-decoration: underline;
+  }
+
+  .navbar-toggler-icon{
+    background-color: greenyellow;
+    border-radius: 100px;
+  }
