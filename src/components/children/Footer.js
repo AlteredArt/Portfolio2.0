@@ -24,9 +24,6 @@ const Social = props => {
 
 const Footer = () => (
     <div id='contact'>
-        <a href="/"><button className="btn btn-dark btn-text" id="navtext">HOME</button></a>
-
-
         <h2 className="title"> Connect With Me!</h2>
         <br />
         <div>

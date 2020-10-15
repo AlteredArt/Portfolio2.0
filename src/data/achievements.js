@@ -1,37 +1,55 @@
-import project1 from '../assets/projects/project1.png'
-import project2 from '../assets/projects/project2.png'
-import project3 from '../assets/projects/project3.png'
-
 const ACHIEVEMENTS = [
     {
         id: 1,
-        title: "Achievement1",
-        image: project1
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/flatiron.jpg'
     },
     {
         id: 2,
-        title: "Achievement 2",
-        image: project2
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/breatheprojectoftheweek'
     },
     {
         id: 3,
-        title: "Achievement 3",
-        image: project3
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/uas.jpg'
     },
     {
         id: 4,
-        title: "Achievement 4",
-        image: project3
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/ES6+Essentials.jpg'
     },
     {
         id: 5,
-        title: "Achievement 5",
-        image: project3
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/apiudemy'
     },
     {
         id: 6,
-        title: "Achievement 6",
-        image: project3
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/c%2B%2Budemy'
+    },
+    {
+        id: 7,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/completewebdev'
+    },
+    {
+        id: 8,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/dommanudemy'
+    },
+    {
+        id: 9,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/interviewudemy'
+    },
+    {
+        id: 10,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/jsbreakoutgameudemy'
+    },
+    {
+        id: 11,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/oopudemy'
+    },
+    {
+        id: 12,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/reactreduxudemy'
+    },
+    {
+        id: 13,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/AWSConcepts.jpg'
     }
 ]
 

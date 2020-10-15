@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../styles/children/Title.css'
 
-const TITLES = ["Artist!", "Cat Dad!", "Adventure Seeker!"];
+const TITLES = ["a Artist!", " a Cat Dad!", "Adventurous!"];
 
 class Titles extends Component {
     state = { titleIndex: 0, fadeIn: true }
@@ -9,6 +9,7 @@ class Titles extends Component {
     componentDidMount() {
         this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000);
         this.animateTitles();
+
     }
 
     UNSAFE_componentWillUnmount() {
@@ -27,7 +28,7 @@ class Titles extends Component {
         const { fadeIn, titleIndex } = this.state;
         const title = TITLES[titleIndex];
         return (
-            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'} style={{ color: "greenyellow" }}>I am a {title}</p>
+            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'} style={{ color: "greenyellow" }}>I am  {title}</p>
         )
     }
 }

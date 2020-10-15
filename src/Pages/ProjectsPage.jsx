@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectsCom, { ProjectsForPage } from '../components/component/ProjectsCom.js';
+import { ProjectsForPage } from '../components/component/ProjectsCom.js';
 
 class ProjectsPage extends React.Component {
     render() {

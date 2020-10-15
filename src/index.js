@@ -15,11 +15,10 @@ import AchievementsPage from './Pages/AchievementsPage'
 import GraphicsPage from './Pages/GraphicsPage'
 
 
-
 ReactDOM.render(
     <Router history={createBrowserHistory()}>
         <Switch>
-            <Route exact path='/' render={() => <NavBar><App /><Footer /></NavBar>} />
+            <Route exact path='/' render={() => <App />} />
             <Route path='/projectspage' render={() => <NavBar><ProjectsPage /><Footer /></NavBar>} />
             <Route path='/blogspage' render={() => <NavBar><BlogsPage /><Footer /></NavBar>} />
             <Route path='/quotespage' render={() => <NavBar><QuotesPage /><Footer /></NavBar>} />

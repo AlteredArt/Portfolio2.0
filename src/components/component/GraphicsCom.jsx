@@ -3,7 +3,7 @@ import GRAPHICS from '../../data/graphics';
 
 
 const Graphic = props => {
-    const { title, image } = props.graphic;
+    const { image } = props.graphic;
 
     return (
         <div className='single-block'>

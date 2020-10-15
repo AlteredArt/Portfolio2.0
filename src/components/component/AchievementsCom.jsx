@@ -3,11 +3,10 @@ import ACHIEVEMENTS from '../../data/achievements'
 
 
 const Achievement = props => {
-    const { title, image } = props.achievement;
+    const { image } = props.achievement;
 
     return (
         <div className='single-block' >
-            <h3 className="sub-title">{title}</h3>
             <img src={image} alt="profile" className='single-img' />
         </div>
     )
