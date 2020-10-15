@@ -1,5 +1,5 @@
 import React from 'react';
-import GraphicsCom, { GraphicsForPage } from '../components/component/GraphicsCom';
+import { GraphicsForPage } from '../components/component/GraphicsCom';
 
 class GraphicsPage extends React.Component {
     render() {

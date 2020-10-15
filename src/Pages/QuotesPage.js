@@ -20,21 +20,20 @@ class QuotesPage extends Component {
     render() {
         return (
             <div>
-                <br />
-                <br />
                 <h2 className="title">Quote Page! <a href="/"><button className="btn btn-dark btn-text" id="navtext">HOME</button></a></h2>
-
                 <br />
                 {
                     this.state.quotes.map(quote => {
                         const { en, author } = quote;
-                        return <p key={quote.id}>{en} <em>{author}</em></p>
+                        return (
+                            <div>
+                                <p key={quote.id}>{en} <em>{author}</em></p>
+                                <hr />
+                            </div>
+                        )
                     })
                 }
-                <hr />
-
             </div >
-
         )
     }
 }

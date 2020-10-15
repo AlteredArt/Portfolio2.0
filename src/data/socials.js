@@ -25,7 +25,7 @@ const SOCIALS = [
     },
     {
         id: 4,
-        link: "https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Jared+Mattas+Resume.pdf",
+        link: "https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Personal/Jared+Mattas+Resume.pdf",
         image: resumeIcon,
         title: 'Resume'
     }

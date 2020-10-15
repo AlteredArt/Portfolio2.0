@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogsCom, { BlogsForPage } from '../components/component/BlogsCom';
+import { BlogsForPage } from '../components/component/BlogsCom';
 
 class BlogsPage extends React.Component {
     render() {

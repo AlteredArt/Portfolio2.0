@@ -12,29 +12,33 @@ const NavBar = ({ children }) => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                        <div className="dropdown-divider"></div>
+
                         <ul className="navbar-nav nav-fill w-100">
                             <li className="nav-item active">
                                 <a className="nav-link h4" id="navtext" href="/">Home <span className="sr-only">(current)</span></a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link h4" id="navtext" href="/projects">Projects</a>
+                                <a className="nav-link h4" id="navtext" href="/projectspage">Projects</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link h4" id="navtext" href="/blogs">Blogs</a>
+                                <a className="nav-link h4" id="navtext" href="/blogspage">Blogs</a>
                             </li>
                             <li className="nav-item dropdown">
+
+
                                 <a className="nav-link dropdown-toggle h4" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Media</a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a className="dropdown-item h3" href="/Achievements">Achievements</a>
-                                    <a className="dropdown-item h3" href="/Graphic">Graphic Design</a>
+                                    <a className="dropdown-item h3" href="/achievementspage">Achievements</a>
+                                    <a className="dropdown-item h3" href="/graphicspage">Graphic Design</a>
                                     <div className="dropdown-divider"></div>
-                                    <a className="dropdown-item h3" href="/Cat">Cat Pictures</a>
-                                    <a className="dropdown-item h3" href="/Quotes">Programming Quotes</a>
+                                    <a className="dropdown-item h3" href="/">Cat Pictures</a>
+                                    <a className="dropdown-item h3" href="/quotespage">Programming Quotes</a>
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link h4 pl-10" id="navtext" href="/#contact">Contact ME</a>
+                                <a className="nav-link h4 pl-10" id="navtext" href="#contact">Contact ME</a>
                             </li>
                         </ul>
                     </div>
