@@ -51,7 +51,9 @@ height: 3px;
 }
 
 
-
+.nav-logo-link-drop{
+  display: none;
+}
 
 
 /* app logo */
