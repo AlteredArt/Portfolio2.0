@@ -8,7 +8,7 @@ const BLOGS = [
     },
     {
         id: 2,
-        title: "Graph QL, Better than the REST",
+        title: "Graph QL Vs. REST",
         description: "Why GraphQl is better than RESTful API",
         link: 'https://medium.com/@cherokeedreemer/graphql-better-than-the-rest-2818e7f50063',
         image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Blogs/GraphQL.jpg'
@@ -36,7 +36,7 @@ const BLOGS = [
     },
     {
         id: 6,
-        title: "JavaScript ES% vs ES6",
+        title: "JavaScript ES5 vs ES6",
         description: "5 Reasons to switch over to ES6",
         link: 'https://medium.com/@cherokeedreemer/binary-what-is-it-good-for-318cd853b05',
         image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Blogs/es5vses6'

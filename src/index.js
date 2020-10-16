@@ -13,12 +13,13 @@ import BlogsPage from './Pages/BlogsPage';
 import QuotesPage from './Pages/QuotesPage';
 import AchievementsPage from './Pages/AchievementsPage'
 import GraphicsPage from './Pages/GraphicsPage'
-
+import HomePage from './Pages/HomePage'
 
 ReactDOM.render(
     <Router history={createBrowserHistory()}>
         <Switch>
-            <Route exact path='/' render={() => <App />} />
+            <Route exact path='/' component={App} />
+            <Route path='/homepage' component={HomePage} />
             <Route path='/projectspage' render={() => <NavBar><ProjectsPage /><Footer /></NavBar>} />
             <Route path='/blogspage' render={() => <NavBar><BlogsPage /><Footer /></NavBar>} />
             <Route path='/quotespage' render={() => <NavBar><QuotesPage /><Footer /></NavBar>} />

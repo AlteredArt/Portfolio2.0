@@ -1,27 +1,34 @@
 #navtext{
     color: greenyellow;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+  }
+  #navtext:hover{
+    color: whitesmoke;
   }
   #navbarDropdownMenuLink{
     color: greenyellow;
+    /* text-decoration: underline; */
+  
+  }
+  #navbarDropdownMenuLink:hover{
+    color: whitesmoke;
     text-decoration: underline;
   }
-
+/* menu icon */
   span.navbar-toggler-icon{
     background-color: greenyellow;
     border-radius: 100px;
-    animation: bounce .3s ease infinite alternate;
-    outline: none !important;
-
+    padding-top: 20px;
   }
 
+  .nav-icon{animation: flip 5s ease-in-out 2s infinite alternate}
+  @keyframes flip{
+    from{transform: rotateY(180deg);}
+    to{transform: rotateY(-180deg);}
+  }
 
-  @keyframes bounce {
-    100%{
-        top: -20px;
-        
-    }
-}
+ 
+  
 .dropdown-divider{
 background-color: black;
 height: 3px;
@@ -29,5 +36,91 @@ height: 3px;
 
 .nav-item:hover{
   background-color: black;
+  color: greenyellow;
   border-radius: 50px;
+  
+}
+.nav-logo-link{
+  display: none;
+
+}
+.nav-logo-link:hover{
+  background-color: whitesmoke;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+
+
+
+
+/* app logo */
+@media (prefers-reduced-motion: no-preference) {
+  .linkedin {
+    animation: App-logo-spin infinite 4s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* email */
+.email{animation: spin-email 2s ease-in-out .1s infinite alternate}
+@keyframes spin-email{
+  from{transform: rotate(15deg);}
+  to{
+    transform: rotate(-15deg);
+    transform-origin: center center;
+  }
+}
+/* github */
+.github{animation: spin-github 2s ease-in-out .1s infinite alternate;}
+@keyframes spin-github{
+  from{transform: rotate(-160deg);}
+  to{
+    transform: rotate(-220deg);
+    transform-origin: center center;
+  }
+}
+/* resume */
+.resume{animation: bounce 0.3s ease-in-out .2s initial alternate}
+
+@keyframes bounce {
+  100%{
+      top: 3px;
+      
+  }
+}
+
+@media (max-width: 990px){
+  .nav-logo-link{
+    width:30px;
+    height: 30px;
+    margin-bottom: 5px;
+    display: inline;
+  }
+  .nav-logo-link-drop{
+    display: none;
+  }
+}
+
+@media (max-width: 380px){
+  .nav-logo-link{
+    display: none;
+  }
+  .navbar-main{
+    margin-bottom: 20px;
+  }
+  .nav-logo-link-drop{
+    display: inline-flex;
+    flex-direction: column;
+    width: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 30px;
+  }
 }

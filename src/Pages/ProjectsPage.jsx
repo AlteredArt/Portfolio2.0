@@ -1,14 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ProjectsForPage } from '../components/component/ProjectsCom.js';
 
-class ProjectsPage extends React.Component {
-    render() {
-        return (
-            <div >
-                <ProjectsForPage />
-            </div>
-        );
-    }
-}
+function ProjectsPage() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
+
+    return (<ProjectsForPage />);
+}
 export default ProjectsPage;

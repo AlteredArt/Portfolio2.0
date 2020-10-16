@@ -1,14 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BlogsForPage } from '../components/component/BlogsCom';
 
-class BlogsPage extends React.Component {
-    render() {
-        return (
-            <div >
-                <BlogsForPage />
-            </div>
-        );
-    }
-}
 
-export default BlogsPage;
+export default function BlogsPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
+
+    return (<BlogsForPage />)
+}

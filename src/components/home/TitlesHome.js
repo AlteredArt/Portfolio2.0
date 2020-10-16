@@ -12,7 +12,7 @@ class Titles extends Component {
 
     }
 
-    UNSAFE_componentWillUnmount() {
+    componentWillUnmount() {
         clearInterval(this.titleInterval);
         clearTimeout(this.timeout);
     }
@@ -28,7 +28,7 @@ class Titles extends Component {
         const { fadeIn, titleIndex } = this.state;
         const title = TITLES[titleIndex];
         return (
-            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'} style={{ color: "greenyellow" }}>I am  {title}</p>
+            <p style={{ paddingTop: '90', marginBottom: '40' }} className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>I am {title}</p>
         )
     }
 }

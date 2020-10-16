@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../../styles/components/Quotes.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const API = 'https://programming-quotes-api.herokuapp.com/quotes/random'
 
@@ -11,6 +12,7 @@ class QuotesHome extends Component {
 
     componentDidMount() {
         this.fetchQuote()
+        Aos.init({ duration: 3000 });
     }
 
     fetchQuote = () => {
@@ -21,10 +23,11 @@ class QuotesHome extends Component {
 
     render() {
         return (
-            <div>
-                <h2 className="title">Your Quote! <a href="/quotespage"><button className="btn btn-dark btn-text" id="navtext">MORE QUOTES</button></a></h2>
+            <div className='generalText'>
+                <h2 className="title">Your Quote!</h2>
+                <a href="/quotespage"><button className="btn">MORE QUOTES</button></a>
                 <Quote quote={this.state.quote} />
-                <hr />
+                <hr data-aos='slide-right' />
             </div>
         )
     }

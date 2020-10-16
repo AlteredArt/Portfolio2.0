@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ACHIEVEMENTS from '../../data/achievements'
+
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 const Achievement = props => {
@@ -7,28 +10,29 @@ const Achievement = props => {
 
     return (
         <div className='single-block' >
-            <img src={image} alt="profile" className='single-img' />
+            <a href={image}><img src={image} alt="achievement" className='single-img' /></a>
         </div>
     )
 }
 
 
 
-
-export default function AchievementsHome(props) {
+export default function AchievementsHome() {
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, [])
     return (
         <div>
-            <h2 className="title">Achievements! <a href='/achievementspage'><button className="btn btn-dark btn-text" id="navtext">MORE ACHIEVEMENTS</button></a></h2>
-            <div>
+            <h2 className="title">Achievements!</h2>
+            <a href='/achievementspage'><button className="btn" >MORE ACHIEVEMENTS</button></a>
+            <div data-aos='fade-up-left'>
                 {
-                    ACHIEVEMENTS.slice(0, 2).map(ACHIEVEMENT => {
-                        return (
-                            <Achievement key={ACHIEVEMENT.id} achievement={ACHIEVEMENT} />
-                        )
-                    })
+                    ACHIEVEMENTS.slice(0, 2).map(ACHIEVEMENT => (
+                        <Achievement key={ACHIEVEMENT.id} achievement={ACHIEVEMENT} />
+                    ))
                 }
             </div>
-            <hr />
+            <hr data-aos="slide-right" />
         </div>
     )
 }
@@ -36,18 +40,15 @@ export default function AchievementsHome(props) {
 
 
 
-export function AchievementsForPage(props) {
+export function AchievementsForPage() {
     return (
-        <div id='achievementspage'>
-            <h2 className="title">Achievements! <a href='/'><button className="btn btn-dark btn-text" id="navtext">HOME</button></a></h2>
-
+        <div>
+            <h2 className="title">Achievements!</h2>
             <div>
                 {
-                    ACHIEVEMENTS.map(ACHIEVEMENT => {
-                        return (
-                            <Achievement key={ACHIEVEMENT.id} achievement={ACHIEVEMENT} />
-                        )
-                    })
+                    ACHIEVEMENTS.map(ACHIEVEMENT => (
+                        <Achievement key={ACHIEVEMENT.id} achievement={ACHIEVEMENT} />
+                    ))
                 }
             </div>
             <hr />
