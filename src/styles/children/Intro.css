@@ -1,11 +1,10 @@
 
 .intro-div{
-    animation: fadeOut ease 9s;
-    -webkit-animation: fadeOut ease 20s;
-    -moz-animation: fadeOut ease 20s;
-    -o-animation: fadeOut ease 20s;
-    -ms-animation: fadeOut ease 20s;
-    
+    animation: fadeOut ease 0.2s;
+    -webkit-animation: fadeOut ease 10s;
+    -moz-animation: fadeOut ease 10s;
+    -o-animation: fadeOut ease 10s;
+    -ms-animation: fadeOut ease 10s;
 }
 @-moz-keyframes fadeOut {
     0% {opacity:0;}
@@ -27,11 +26,10 @@
     100% {opacity:1;}
     }
 
-
-@keyframes fadeOut {
-    from {opacity: 1;}
-    to {opacity: 0;}
-}
+    @keyframes fadeOut {
+        from {opacity: 1;}
+        to {opacity: 0;}
+    }
 
 .App-logo {
     height: 40vmin;
@@ -46,6 +44,15 @@
       animation: App-logo-spin infinite 4s linear;
     }
   }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
   
 
 
@@ -57,9 +64,10 @@
     color: whitesmoke;height: 100px;
     height: 100px;
 }
-.intro-title span{
+span{
     position: relative;
-    top: 20px;
+    /* top: 20px; */
+    /* padding-bottom: 40px; */
     display: inline-block;
     animation: bounce .3s ease infinite alternate;
     text-shadow: 0 1px 0 greenyellow,
@@ -88,7 +96,7 @@
 .intro-title span:nth-child(13){animation-delay: .12s;}
 @keyframes bounce {
     100%{
-        top: -20px;
+        top: -40px;
         text-shadow: 0 1px 0 greenyellow,
                     0 2px 0 greenyellow,
                     0 3px 0 greenyellow,
@@ -103,13 +111,4 @@
 }
 
 
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
   

@@ -1,6 +1,3 @@
-import breathe from '../assets/projects/breathe.png'
-import companyX from '../assets/projects/companyX.png'
-import biorhythm from '../assets/projects/bio1.png'
 
 const PROJECTS = [
     {

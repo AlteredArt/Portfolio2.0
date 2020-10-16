@@ -1,14 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { GraphicsForPage } from '../components/component/GraphicsCom';
 
-class GraphicsPage extends React.Component {
-    render() {
-        return (
-            <div >
-                <GraphicsForPage />
-            </div>
-        );
-    }
-}
+export default function GraphicsPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
 
-export default GraphicsPage;
+    return (<GraphicsForPage />)
+}

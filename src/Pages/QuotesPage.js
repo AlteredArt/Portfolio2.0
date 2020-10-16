@@ -20,19 +20,20 @@ class QuotesPage extends Component {
     render() {
         return (
             <div>
-                <h2 className="title">Quote Page! <a href="/"><button className="btn btn-dark btn-text" id="navtext">HOME</button></a></h2>
+                <h2 className="title">Programming Quote Page!</h2>
                 <br />
                 {
-                    this.state.quotes.map(quote => {
+                    this.state.quotes.slice(0, 8).map(quote => {
                         const { en, author } = quote;
                         return (
-                            <div>
+                            <div className='generalText'>
                                 <p key={quote.id}>{en} <em>{author}</em></p>
                                 <hr />
                             </div>
                         )
                     })
                 }
+                <a href="/homepage"><button className="btn">HOME</button></a>
             </div >
         )
     }

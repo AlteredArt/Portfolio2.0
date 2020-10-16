@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import GRAPHICS from '../../data/graphics';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Graphic = props => {
     const { image } = props.graphic;
 
     return (
         <div className='single-block'>
-            <img src={image} alt="profile" className='single-img' />
+            <a href={image}> <img src={image} alt="profile" className='single-img' /></a>
         </div>
     )
 }
@@ -15,20 +16,22 @@ const Graphic = props => {
 
 
 
-export default function GraphicsHome(props) {
+export default function GraphicsHome() {
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, [])
     return (
         <div>
-            <h2 className="title">Graphics! <a href='/graphicspage'><button className="btn btn-dark btn-text" id="navtext">MORE GRAPHICS</button></a></h2>
-            <div>
+            <h2 className="title">Graphics!</h2>
+            <a href='/graphicspage'><button className="btn">MORE GRAPHICS</button></a>
+            <div data-aos='flip-up'>
                 {
-                    GRAPHICS.slice(0, 2).map(GRAPHIC => {
-                        return (
-                            <Graphic key={GRAPHIC.id} graphic={GRAPHIC} />
-                        )
-                    })
+                    GRAPHICS.slice(0, 2).map(GRAPHIC => (
+                        <Graphic key={GRAPHIC.id} graphic={GRAPHIC} />
+                    ))
                 }
             </div>
-            <hr />
+            <hr data-aos='slide-left' />
         </div>
     )
 }
@@ -36,18 +39,15 @@ export default function GraphicsHome(props) {
 
 
 
-export function GraphicsForPage(props) {
+export function GraphicsForPage() {
     return (
-        <div id='graphicspage'>
-            <h2 className="title">Graphics! <a href='/'><button className="btn btn-dark btn-text" id="navtext">HOME</button></a></h2>
-
+        <div>
+            <h2 className="title">Graphics!</h2>
             <div>
                 {
-                    GRAPHICS.map(GRAPHIC => {
-                        return (
-                            <Graphic key={GRAPHIC.id} graphic={GRAPHIC} />
-                        )
-                    })
+                    GRAPHICS.map(GRAPHIC => (
+                        <Graphic key={GRAPHIC.id} graphic={GRAPHIC} />
+                    ))
                 }
             </div>
             <hr />
