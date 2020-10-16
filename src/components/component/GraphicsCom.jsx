@@ -24,7 +24,7 @@ export default function GraphicsHome() {
         <div>
             <h2 className="title">Graphics!</h2>
             <a href='/graphicspage'><button className="btn">MORE GRAPHICS</button></a>
-            <div data-aos='flip-up'>
+            <div data-aos='fade-in'>
                 {
                     GRAPHICS.slice(0, 2).map(GRAPHIC => (
                         <Graphic key={GRAPHIC.id} graphic={GRAPHIC} />

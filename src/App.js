@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './styles/components/Sections.css'
+import './styles/children/Sections.css'
 import './styles/children/Intro.css'
 import Intro from './components/home/IntroPage'
 import { Redirect } from 'react-router-dom';
@@ -17,9 +17,9 @@ export default function App() {
 
 
   let intro = displayIntro ? (
-    <Intro />
+    <Intro key='1' />
   ) : (
-      <Redirect to='/homepage' />
+      <Redirect to='/homepage' key='2' />
     );
 
   return ([intro]);

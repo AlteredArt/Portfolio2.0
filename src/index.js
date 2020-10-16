@@ -17,7 +17,6 @@ import HomePage from './Pages/HomePage'
 
 ReactDOM.render(
     <Router history={createBrowserHistory()}>
-
         <Switch>
             <Route exact path='/' component={App} />
             <Route path='/homepage' component={HomePage} />

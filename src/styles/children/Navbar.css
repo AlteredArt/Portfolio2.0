@@ -53,14 +53,7 @@ height: 3px;
 
 
 
-@media (max-width: 990px){
-  .nav-logo-link{
-    width:30px;
-    height: 30px;
-    margin-bottom: 5px;
-    display: inline;
-  }
-}
+
 /* app logo */
 @media (prefers-reduced-motion: no-preference) {
   .linkedin {
@@ -100,5 +93,34 @@ height: 3px;
   100%{
       top: 3px;
       
+  }
+}
+
+@media (max-width: 990px){
+  .nav-logo-link{
+    width:30px;
+    height: 30px;
+    margin-bottom: 5px;
+    display: inline;
+  }
+  .nav-logo-link-drop{
+    display: none;
+  }
+}
+
+@media (max-width: 380px){
+  .nav-logo-link{
+    display: none;
+  }
+  .navbar-main{
+    margin-bottom: 20px;
+  }
+  .nav-logo-link-drop{
+    display: inline-flex;
+    flex-direction: column;
+    width: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 30px;
   }
 }

@@ -26,3 +26,9 @@
     from {opacity: 0}
     to {opacity: 100}
   }
+
+  @media (max-width: 330px){
+   .title-fade-out{font-size: 40px;}
+   .title-fade-in{font-size: 40px;}
+
+  }

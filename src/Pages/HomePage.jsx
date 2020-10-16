@@ -12,17 +12,17 @@ import NavBar from '../components/children/Navbar';
 import ProfilePic from '../assets/images/profile.JPG';
 import TitlesHome from '../components/home/TitlesHome';
 import BioHome from '../components/home/BioHome';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+
 
 export default function Home() {
 
     useEffect(() => {
-        window.scrollTo(0, 0)
-    })
-    useEffect(() => {
         Aos.init({ duration: 3000 });
     }, [])
+
     return (
         <div >
             <NavBar />
