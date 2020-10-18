@@ -6,7 +6,7 @@ const Social = props => {
     const { image, link } = props.social;
     return (
         <span style={{ margin: 10 }}>
-            <a className='link' href={link}>
+            <a href={link}>
                 <img className="icon-img" src={image} alt="social" />
             </a>
         </span >
@@ -17,7 +17,7 @@ const Social = props => {
 
 const Footer = () => (
     <div id='footer'>
-        <h2 className="title"> Connect With Me!</h2>
+        <h2 className="title-home"> Connect With Me!</h2>
         <div>
             {
                 SOCIALS.map(SOCIAL => (

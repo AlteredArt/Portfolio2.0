@@ -8,11 +8,12 @@ import App from './App';
 import NavBar from './components/children/Navbar';
 import Footer from './components/children/Footer'
 //Routes
-import ProjectsPage from './Pages/ProjectsPage'
-import BlogsPage from './Pages/BlogsPage';
+import { ProjectsForPage } from './components/component/ProjectsCom'
+import { BlogsForPage } from './components/component/BlogsCom'
+import { AchievementsForPage } from './components/component/AchievementsCom'
+import { GraphicsForPage } from './components/component/GraphicsCom'
+
 import QuotesPage from './Pages/QuotesPage';
-import AchievementsPage from './Pages/AchievementsPage'
-import GraphicsPage from './Pages/GraphicsPage'
 import HomePage from './Pages/HomePage'
 
 ReactDOM.render(
@@ -20,11 +21,11 @@ ReactDOM.render(
         <Switch>
             <Route exact path='/' component={App} />
             <Route path='/homepage' component={HomePage} />
-            <Route path='/projectspage' render={() => <NavBar><ProjectsPage /><Footer /></NavBar>} />
-            <Route path='/blogspage' render={() => <NavBar><BlogsPage /><Footer /></NavBar>} />
+            <Route path='/projectspage' render={() => <NavBar><ProjectsForPage /><Footer /></NavBar>} />
+            <Route path='/blogspage' render={() => <NavBar><BlogsForPage /><Footer /></NavBar>} />
             <Route path='/quotespage' render={() => <NavBar><QuotesPage /><Footer /></NavBar>} />
-            <Route path='/achievementspage' render={() => <NavBar><AchievementsPage /><Footer /></NavBar>} />
-            <Route path='/graphicspage' render={() => <NavBar><GraphicsPage /><Footer /></NavBar>} />
+            <Route path='/achievementspage' render={() => <NavBar><AchievementsForPage /><Footer /></NavBar>} />
+            <Route path='/graphicspage' render={() => <NavBar><GraphicsForPage /><Footer /></NavBar>} />
         </Switch>
     </Router>,
     document.getElementById('root'));

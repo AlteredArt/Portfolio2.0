@@ -20,7 +20,7 @@ class QuotesPage extends Component {
     render() {
         return (
             <div>
-                <h2 className="title">Programming Quote Page!</h2>
+                <h2 className="title-page">Programming Quote Page!</h2>
                 <br />
                 {
                     this.state.quotes.slice(0, 8).map(quote => {

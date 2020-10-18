@@ -50,6 +50,42 @@ const ACHIEVEMENTS = [
     {
         id: 13,
         image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/AWSConcepts.jpg'
+    },
+    {
+        id: 14,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/Ionic+course.jpg'
+    },
+    {
+        id: 15,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/adobeillustrator.jpg'
+    },
+    {
+        id: 16,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/healthy+cooking.jpg'
+    },
+    {
+        id: 17,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/html5solo.jpg'
+    },
+    {
+        id: 18,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/js3.jpg'
+    },
+    {
+        id: 19,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/npm.jpg'
+    },
+    {
+        id: 20,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/phpsolo.jpg'
+    },
+    {
+        id: 21,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/reactVr.jpg'
+    },
+    {
+        id: 22,
+        image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Achievements/reacthooks.jpg'
     }
 ]
 
