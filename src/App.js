@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './styles/children/Sections.css'
+import './styles/children/HomeSection.css'
+import './styles/children/PageSection.css'
+
 import './styles/children/Intro.css'
 import Intro from './components/home/IntroPage'
 import { Redirect } from 'react-router-dom';

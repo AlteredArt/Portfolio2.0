@@ -111,4 +111,26 @@ span{
 }
 
 
-  
+
+/* media query 1200*/
+@media (max-width: 1200px){
+
+}
+
+/* media query 992*/
+@media (max-width: 992px){
+
+}
+
+/* media query 768*/
+@media (max-width: 768px){
+
+}
+
+
+/* media query 480px */
+@media(max-width: 480px){
+
+
+
+}

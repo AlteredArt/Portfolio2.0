@@ -5,8 +5,12 @@ import 'aos/dist/aos.css'
 const API = 'https://programming-quotes-api.herokuapp.com/quotes/random'
 
 const Quote = ({ quote: { en, author } }) => (
-    <p>{en} <em>{author}</em></p>
+    <p className='generalText'>{en} <em>{author}</em></p>
 )
+
+
+
+
 class QuotesHome extends Component {
     state = { quote: {}, quotes: [] };
 
@@ -23,9 +27,9 @@ class QuotesHome extends Component {
 
     render() {
         return (
-            <div className='generalText'>
-                <h2 className="title">Your Quote!</h2>
-                <a href="/quotespage"><button className="btn">MORE QUOTES</button></a>
+            <div >
+                <h2 className="title-home">Your Quote!</h2>
+                <a href="/quotespage"><button className="btn-home">MORE QUOTES</button></a>
                 <Quote quote={this.state.quote} />
                 <hr data-aos='slide-right' />
             </div>

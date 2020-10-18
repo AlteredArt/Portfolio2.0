@@ -9,8 +9,8 @@ const Achievement = props => {
     const { image } = props.achievement;
 
     return (
-        <div className='single-block' >
-            <a href={image}><img src={image} alt="achievement" className='single-img' /></a>
+        <div className='single-block-home' >
+            <a href={image}><img src={image} alt="achievement" className='single-img-home' /></a>
         </div>
     )
 }
@@ -19,12 +19,12 @@ const Achievement = props => {
 
 export default function AchievementsHome() {
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 500 });
     }, [])
     return (
         <div>
-            <h2 className="title">Achievements!</h2>
-            <a href='/achievementspage'><button className="btn" >MORE ACHIEVEMENTS</button></a>
+            <h2 className="title-home">Achievements!</h2>
+            <a href='/achievementspage'><button className="btn-home" >MORE ACHIEVEMENTS</button></a>
             <div data-aos='fade-up-left'>
                 {
                     ACHIEVEMENTS.slice(0, 2).map(ACHIEVEMENT => (
@@ -37,17 +37,30 @@ export default function AchievementsHome() {
     )
 }
 
+//page
+const AchievementPage = props => {
+    const { image } = props.achievement;
+
+    return (
+        <div className='single-block-page' >
+            <a href={image}><img src={image} alt="achievement" className='single-img-page' /></a>
+        </div>
+    )
+}
 
 
 
 export function AchievementsForPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     return (
         <div>
-            <h2 className="title">Achievements!</h2>
+            <h2 className="title-page">Achievements!</h2>
             <div>
                 {
                     ACHIEVEMENTS.map(ACHIEVEMENT => (
-                        <Achievement key={ACHIEVEMENT.id} achievement={ACHIEVEMENT} />
+                        <AchievementPage key={ACHIEVEMENT.id} achievement={ACHIEVEMENT} />
                     ))
                 }
             </div>

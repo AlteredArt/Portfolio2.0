@@ -26,7 +26,7 @@ export default function Home() {
     return (
         <div >
             <NavBar />
-            <h1 className="title">Full Stack Developer & Graphic Designer</h1>
+            <h1 className="main-title">Full Stack Developer & Graphic Designer</h1>
             <TitlesHome />
             <img src={ProfilePic} alt="profile" className='profilePic' />
             <BioHome />
