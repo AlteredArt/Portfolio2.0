@@ -80,6 +80,8 @@ export function ProjectsForPage() {
                 }
             </div>
             <hr />
+            <a href="/homepage"><button className="btn-page">HOME</button></a>
+
         </div>
     )
 }

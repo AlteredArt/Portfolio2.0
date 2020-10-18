@@ -1,8 +1,9 @@
-import React from 'react'
+// done / Display the read me bio
+import React from 'react';
 
 class Bio extends React.Component {
     state = { displayBio: false }
-
+    //toggle display bio
     toggleDisplayBio = () => {
         this.setState({ displayBio: !this.state.displayBio });
     }

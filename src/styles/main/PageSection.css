@@ -123,6 +123,11 @@
           cursor: pointer;
         }
           }
+          @media (min-width: 991px){
+            .btn-page{
+              display: none;
+            }
+          }
           @media (max-width: 500px){
             .single-block-page{
               width: 350px;

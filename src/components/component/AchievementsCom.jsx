@@ -65,6 +65,8 @@ export function AchievementsForPage() {
                 }
             </div>
             <hr />
+            <a href="/homepage"><button className="btn-page">HOME</button></a>
+
         </div>
     )
 }

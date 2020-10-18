@@ -1,22 +1,26 @@
+//done renders the titles animations
 import React, { Component } from 'react';
 import '../../styles/children/Title.css'
 
+//titles array
 const TITLES = ["a Artist!", " a Cat Dad!", "Adventurous!"];
 
-class Titles extends Component {
+export default class Titles extends Component {
     state = { titleIndex: 0, fadeIn: true }
 
+    //sets timeout on title switch
     componentDidMount() {
         this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000);
         this.animateTitles();
-
     }
 
+    //resets the title animation
     componentWillUnmount() {
         clearInterval(this.titleInterval);
         clearTimeout(this.timeout);
     }
 
+    //animates the titles
     animateTitles = () => {
         this.titleInterval = setInterval(() => {
             const titleIndex = (this.state.titleIndex + 1) % TITLES.length;
@@ -24,13 +28,13 @@ class Titles extends Component {
             this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000);
         }, 4000);
     }
+
+    //renders the titles
     render() {
         const { fadeIn, titleIndex } = this.state;
         const title = TITLES[titleIndex];
         return (
-            <p style={{ paddingTop: '90', marginBottom: '40' }} className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>I am {title}</p>
+            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>I am {title}</p>
         )
     }
 }
-
-export default Titles;

@@ -1,0 +1,56 @@
+/* fonts / body / hr /footer fix media queries*/
+/* fonts */
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(../../assets/fonts//roboto-condensed.light.ttf);
+  font-weight: 200;
+}
+/*second font */
+@font-face {
+  font-family: EconomicaBold;
+  src: url(../../assets/fonts/economica-bold.ttf);
+  font-weight: 200;
+}
+
+
+/* body */
+body {
+  margin: 0;
+  text-align: center;
+  padding: 2.5%;
+  font-family: 'RobotoCondensed';
+  background-color: black;
+  color: whitesmoke;
+}
+
+
+/* hr */
+hr {
+  height: 7px;
+  border-top: 5px dotted greenyellow;
+  border-bottom: 5px dotted greenyellow;
+  border-radius: 20px;
+  margin-top: 35px;
+  overflow: hidden;
+}
+
+
+/* footer icon */
+.footer-icon { 
+  margin: 15px; 
+  width: 35px; 
+  height: 35px; 
+  background-color: whitesmoke;
+}
+/* on footer icon hover */
+.footer-icon:hover{
+  background-color:greenyellow;
+}
+
+
+
+@media(max-width: 600px){
+.footer-icon { 
+  margin-bottom: 30px;
+}
+}

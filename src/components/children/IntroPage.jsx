@@ -1,15 +1,18 @@
+//done / renders the intro screen 
 import React, { useEffect } from 'react';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/social/logo.svg';
+//aos animation
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
 export default function Intro() {
+    //aos animation
     useEffect(() => {
-        Aos.init({ duration: 500 });
+        Aos.init({ duration: 50 });
     }, [])
+
     return (
         <div className='intro-div'>
-            <br />
             <h1 className='intro-title' >
                 Welcome to my React<br /><br />
                 <span>P</span>

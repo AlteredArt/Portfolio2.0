@@ -1,32 +1,25 @@
+//done / pulls from social database and renders the footer
 import React from 'react';
-import '../../styles/children/Footer.css'
 import SOCIALS from '../../data/socials';
 
-const Social = props => {
-    const { image, link } = props.social;
-    return (
-        <span style={{ margin: 10 }}>
-            <a href={link}>
-                <img className="icon-img" src={image} alt="social" />
-            </a>
-        </span >
-    )
-}
-
-
-
-const Footer = () => (
-    <div id='footer'>
-        <h2 className="title-home"> Connect With Me!</h2>
-        <div>
-            {
-                SOCIALS.map(SOCIAL => (
-                    <Social key={SOCIAL.id} social={SOCIAL} />
-                ))
-            }
-        </div>
-    </div>
+//social render
+const Social = props => (
+    <a href={props.social.link}><img className="footer-icon" src={props.social.image} alt="social" /></a>
 )
 
 
-export default Footer;
+//footer 
+export default function Footer() {
+    return (
+        <div>
+            <h2 className="title-home"> Connect With Me!</h2>
+            <div>
+                {
+                    SOCIALS.map(SOCIAL => (
+                        <Social key={SOCIAL.id} social={SOCIAL} />
+                    ))
+                }
+            </div>
+        </div>
+    )
+}
