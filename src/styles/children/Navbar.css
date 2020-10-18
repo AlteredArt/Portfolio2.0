@@ -1,78 +1,83 @@
-#navtext{
-    color: greenyellow;
-    /* text-decoration: underline; */
-  }
-  #navtext:hover{
-    color: whitesmoke;
-  }
-  #navbarDropdownMenuLink{
-    color: greenyellow;
-    /* text-decoration: underline; */
-  
-  }
-  #navbarDropdownMenuLink:hover{
-    color: whitesmoke;
-    text-decoration: underline;
-  }
-/* menu icon */
-  span.navbar-toggler-icon{
-    background-color: greenyellow;
-    border-radius: 100px;
-    padding-top: 20px;
+/* scroll bar wrapper*/
+.scrollBarWrapper{
+  background-color: black;
+  height:5px;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+/* scroll bar style */
+.scrollBarMainStyle{
+  height: 5px;
+  background-color: greenyellow;
+}
+.nav-icons-tablet{
+  display: none;
+}
+.nav-icons-dropdown{
+  display: none;
+}
+/* navbar div */
+.navbar-main{
+  margin-bottom: 20px;
+}
+/* spacing for scroll bar */
+.navbar{
+  top: 5px;
+}
+/* dropdown divider */
+.dropdown-divider{
+  background-color: black;
+  height: 3px;
   }
 
-  .nav-icon{animation: flip 5s ease-in-out 2s infinite alternate}
+/* navigation text */
+.name{ 
+  color: greenyellow;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.name:hover{
+  color: greenyellow;
+  text-decoration: none;
+}
+
+.nav-item{
+  color: greenyellow;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.nav-item:hover{color: whitesmoke;}
+
+
+
+
+
+/* hamburger menu icon */
+span.navbar-toggler-icon{
+  background-color: greenyellow;
+  border-radius: 100px;
+  padding-top: 20px;
+}
+
+/* animations */
+/* hamburger menu animation */
+.nav-icon{animation: flip 5s ease-in-out 2s infinite alternate}
   @keyframes flip{
     from{transform: rotateY(180deg);}
     to{transform: rotateY(-180deg);}
-  }
-  .navbar-main{
-    margin-bottom: 20px;
-  }
- 
-  
-.dropdown-divider{
-background-color: black;
-height: 3px;
 }
-
-.nav-item:hover{
-  background-color: black;
-  color: greenyellow;
-  border-radius: 50px;
-  
-}
-.nav-logo-link{
-  display: none;
-
-}
-.nav-logo-link:hover{
-  background-color: whitesmoke;
-  border-radius: 50px;
-  padding: 5px;
-}
-
-
-.nav-logo-link-drop{
-  display: none;
-}
-
-
-/* app logo */
+/* linked in animation */
 @media (prefers-reduced-motion: no-preference) {
-  .linkedin {
-    animation: App-logo-spin infinite 4s linear;
-  }
+  .linkedin {animation: App-logo-spin infinite 4s linear;}
 }
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
-/* email */
+/* email animation*/
 .email{animation: spin-email 2s ease-in-out .1s infinite alternate}
 @keyframes spin-email{
   from{transform: rotate(15deg);}
@@ -81,7 +86,7 @@ height: 3px;
     transform-origin: center center;
   }
 }
-/* github */
+/* github animation*/
 .github{animation: spin-github 2s ease-in-out .1s infinite alternate;}
 @keyframes spin-github{
   from{transform: rotate(-160deg);}
@@ -90,79 +95,59 @@ height: 3px;
     transform-origin: center center;
   }
 }
-/* resume */
-.resume{animation: bounce 0.3s ease-in-out .2s initial alternate}
+/* resume animation*/
+.resume{animation: bounce 3s ease-in-out .2s infinite alternate;}
+@keyframes bounce {100%{top: 3px;}}
+/* animations end*/
 
-@keyframes bounce {
-  100%{
-      top: 3px;
-      
-  }
-}
 
 
 
 
 
 @media (max-width: 990px){
-  .nav-logo-link{
+  .nav-icons-tablet{
+    display: flex;
+    /* justify-content: space-around; */
+  }
+  .nav-logo{
+    margin-left: 30px;
+    margin-right: 30px;
+    width:40px;
+    height: 40px;
+  }
+  .nav-logo:hover{
+    background-color: whitesmoke;
+    border-radius: 50px;
+  }
+}
+
+
+@media (max-width: 700px){
+ 
+  .nav-logo{
+    margin-left: 20px;
+    margin-right: 20px;
     width:30px;
     height: 30px;
-    margin-bottom: 5px;
-    display: inline;
   }
- 
-  .nav-logo-link-drop{
-    display: none;
-  }
+  
+}
+@media (max-width: 580px){
+ .nav-icons-tablet{display: none;}
+ .nav-icons-dropdown{
+  display: inline-block;
+}
+.nav-logo-drop{
+  margin: 20px;
+  width:30px;
+  height: 30px;
+}
+.nav-logo-drop:hover{
+  background-color: whitesmoke;
+  border-radius: 50px;
+}
 }
 
 
-@media (max-width: 540px){
- 
- 
-}
 
-@media (max-width: 380px){
-  .nav-logo-link{
-    display: none;
-  }
- 
-  .nav-logo-link-drop{
-    display: inline-flex;
-    flex-direction: column;
-    width: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    height: 30px;
-  }
-}
-
-
-  /* desktop: 1200px */
-/* laptop: 992px */
-/* tablet: 768px; */
-/* phone: 480px */
-
-/* media query 1200*/
-@media (max-width: 1200px){
-
-}
-
-/* media query 992*/
-@media (max-width: 992px){
-
-}
-
-/* media query 768*/
-@media (max-width: 768px){
-
-}
-
-
-/* media query 480px */
-@media(max-width: 480px){
-
-
-
-}

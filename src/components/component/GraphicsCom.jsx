@@ -7,7 +7,7 @@ const Graphic = props => {
     const { image } = props.graphic;
 
     return (
-        <div className='single-block-home '>
+        <div className='single-block-home'>
             <a href={image}> <img src={image} alt="profile" className='single-img-home' /></a>
         </div>
     )
@@ -65,6 +65,8 @@ export function GraphicsForPage() {
                 }
             </div>
             <hr />
+            <a href="/homepage"><button className="btn-page">HOME</button></a>
+
         </div>
     )
 }

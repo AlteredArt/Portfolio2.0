@@ -1,14 +1,18 @@
+// done displays intro / times out intro / redirects to home page
 import React, { useState, useEffect } from 'react';
-import './styles/children/HomeSection.css'
-import './styles/children/PageSection.css'
-
-import './styles/children/Intro.css'
-import Intro from './components/home/IntroPage'
 import { Redirect } from 'react-router-dom';
+// styles
+import './styles/main/HomeSection.css'
+import './styles/main/PageSection.css'
+import './styles/children/Intro.css'
+// components
+import Intro from './components/children/IntroPage'
 
 export default function App() {
   const [displayIntro, setDisplayIntro] = useState(true);
 
+
+  // set timeout on display intro after 4 seconds
   useEffect(() => {
     if (displayIntro) {
       setTimeout(() => {
@@ -18,11 +22,15 @@ export default function App() {
   }, [displayIntro])
 
 
+  // display intro conditional
   let intro = displayIntro ? (
     <Intro key='1' />
   ) : (
-      <Redirect to='/homepage' key='2' />
+      //redirect to home page after intro
+      //prevents intro from being replayed
+      <Redirect to='/home' key='2' />
     );
+
 
   return ([intro]);
 }
