@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import BLOGS from '../../data/blogs';
-// import Aos from 'aos';
-// import 'aos/dist/aos.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 const Blog = props => {
@@ -19,26 +19,27 @@ const Blog = props => {
 
 
 export default function BlogsHome() {
-    // useEffect(() => {
-    //     Aos.init({ duration: 500 });
-    // }, [])
+
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    }, [])
+
     return (
         <div>
             <h2 className="title-home">Blogs!</h2>
-            <a href="/blogspage"><button className="btn-home">MORE BLOGS</button></a>
-            <div >
+            <a href="/blogs"><button className="btn-home">MORE BLOGS</button></a>
+            <div data-aos='fade-up-right'>
                 {
                     BLOGS.slice(0, 2).map(BLOG => (
                         <Blog key={BLOG.id} blog={BLOG} />
                     ))
                 }
             </div>
-            <hr />
+            <hr data-aos='slide-left' />
         </div>
     )
 }
-// <div data-aos='fade-up-right'>
-// <hr data-aos='slide-left' />
+
 
 //page
 const BlogPage = props => {

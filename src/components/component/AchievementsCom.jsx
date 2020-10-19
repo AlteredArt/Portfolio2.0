@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import ACHIEVEMENTS from '../../data/achievements'
 
-// import Aos from 'aos';
-// import 'aos/dist/aos.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 const Achievement = props => {
@@ -18,26 +18,27 @@ const Achievement = props => {
 
 
 export default function AchievementsHome() {
-    // useEffect(() => {
-    //     Aos.init({ duration: 500 });
-    // }, [])
+
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    }, [])
+
     return (
         <div>
             <h2 className="title-home">Achievements!</h2>
-            <a href='/achievementspage'><button className="btn-home" >MORE ACHIEVEMENTS</button></a>
-            <div >
+            <a href='/achievements'><button className="btn-home" >MORE ACHIEVEMENTS</button></a>
+            <div data-aos='fade-up-left'>
                 {
                     ACHIEVEMENTS.slice(0, 2).map(ACHIEVEMENT => (
                         <Achievement key={ACHIEVEMENT.id} achievement={ACHIEVEMENT} />
                     ))
                 }
             </div>
-            <hr />
+            <hr data-aos="slide-right" />
         </div>
     )
 }
-// <div data-aos='fade-up-left'>
-// <hr data-aos="slide-right" />
+
 
 
 //page
@@ -68,7 +69,7 @@ export function AchievementsForPage() {
                 }
             </div>
             <hr />
-            <a href="/homepage"><button className="btn-page">HOME</button></a>
+            <a href="/home"><button className="btn-page">HOME</button></a>
 
         </div>
     )

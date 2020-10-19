@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PROJECTS from '../../data/projects';
-// import Aos from 'aos';
-// import 'aos/dist/aos.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 const Project = props => {
@@ -24,27 +24,25 @@ const Project = props => {
 
 
 export default function ProjectsHome() {
-    // useEffect(() => {
-    //     Aos.init({ duration: 500 });
-    // }, [])
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    }, [])
+
     return (
         <div id='projects'>
             <h2 className="title-home">Projects! </h2>
-            <a href='/projectspage'><button className="btn-home">MORE PROJECTS</button></a>
-            <div>
+            <a href='/projects'><button className="btn-home">MORE PROJECTS</button></a>
+            <div data-aos='fade-right'>
                 {
                     PROJECTS.slice(0, 2).map(PROJECT => (
                         <Project key={PROJECT.id} project={PROJECT} />
                     ))
                 }
             </div>
-            <hr />
+            <hr data-aos="slide-left" />
         </div>
     )
 }
-// <div data-aos='fade-right'>
-
-// <hr data-aos="slide-left" />
 
 
 // Page
@@ -83,7 +81,7 @@ export function ProjectsForPage() {
                 }
             </div>
             <hr />
-            <a href="/homepage"><button className="btn-page">HOME</button></a>
+            <a href="/home"><button className="btn-page">HOME</button></a>
 
         </div>
     )

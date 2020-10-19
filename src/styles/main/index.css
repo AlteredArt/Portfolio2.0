@@ -10,7 +10,9 @@
   src: url(../../assets/fonts/economica-bold.ttf);
 }
 
-
+html {
+  overflow-x: hidden;
+}
 /* body */
 body {
   margin: 0;
