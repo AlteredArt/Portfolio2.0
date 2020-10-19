@@ -12,15 +12,15 @@ import NavBar from '../children/Navbar';
 import TitlesHome from './TitlesHome';
 import BioHome from './BioHome';
 //aos
-// import Aos from 'aos';
-// import 'aos/dist/aos.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 export default function Home() {
-    //aos animation
-    // useEffect(() => {
-    //     Aos.init({ duration: 3000 });
-    // }, [])
+    // aos animation
+    useEffect(() => {
+        Aos.init({ duration: 3000 });
+    }, [])
 
     return (
         <div >
@@ -29,7 +29,7 @@ export default function Home() {
             <TitlesHome />
             <img src='https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Personal/headshot' alt="profile" className='profilePic' />
             <BioHome />
-            <hr />
+            <hr data-aos='slide-left' />
             <ProjectsHome />
             <BlogsHome />
             <AchievementsHome />
@@ -39,4 +39,4 @@ export default function Home() {
         </div>
     )
 }
-// <hr data-aos='slide-left' />
+

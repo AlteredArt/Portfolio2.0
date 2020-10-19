@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 //aos animation
-// import Aos from 'aos';
-// import 'aos/dist/aos.css'
-//Apis to fetch
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 
 
 
@@ -20,8 +20,9 @@ export default class QuotesHome extends Component {
     //aos animation
     componentDidMount() {
         this.fetchQuote()
+        Aos.init({ duration: 3000 });
     }
-    // Aos.init({ duration: 3000 });
+
 
     //fetching single random quotes
     fetchQuote = () => {
@@ -36,12 +37,12 @@ export default class QuotesHome extends Component {
                 <h2 className="title-home">Your Quote!</h2>
                 <a href="/quotes"><button className="btn-home">MORE QUOTES</button></a>
                 <Quote quote={this.state.quote} />
-                <hr />
+                <hr data-aos='slide-right' />
             </div>
         )
     }
 }
-// <hr data-aos='slide-right' />
+
 
 
 
@@ -75,7 +76,7 @@ export class QuotesPage extends Component {
                         )
                     })
                 }
-                <a href="/homepage"><button className="btn-page">HOME</button></a>
+                <a href="/home"><button className="btn-page">HOME</button></a>
             </div >
         )
     }
