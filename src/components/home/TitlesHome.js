@@ -1,6 +1,6 @@
 //done renders the titles animations
 import React, { Component } from 'react';
-import '../../styles/children/Title.css'
+
 
 //titles array
 const TITLES = ["a Artist!", " a Cat Dad!", "Adventurous!"];
@@ -34,7 +34,7 @@ export default class Titles extends Component {
         const { fadeIn, titleIndex } = this.state;
         const title = TITLES[titleIndex];
         return (
-            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>I am {title}</p>
+            <h6 className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>I am {title}</h6>
         )
     }
 }

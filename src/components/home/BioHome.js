@@ -13,10 +13,11 @@ class Bio extends React.Component {
         let bio = this.state.displayBio ? (
             <div key='1'>
                 <div className='generalText'>
-                    <p> I code every day while my cats sit on the keyboards and in front of the screens.</p>
-                    <p> I am currently looking for work in Software Development.</p>
-                    <p>This is my new portfolio built to show off my Development skills.</p>
-                    <p style={{ color: 'red', textDecoration: 'underline' }}> With this APP I accomplished:</p>
+                    <h1> I code every day while my cats sit on the keyboards and in front of the screens.</h1>
+                    <h1> I am currently looking for work in Software Development.</h1>
+                    <h1>This is my new portfolio built to show off my Development skills.</h1>
+                    <h1 style={{ color: 'red', textDecoration: 'underline' }}> With this APP I accomplished:</h1>
+
                 </div>
                 <ul className='accomplishedList'>
                     <li>Responsive CSS3 with animations</li>
@@ -39,7 +40,7 @@ class Bio extends React.Component {
             </div>
         ) : (
                 <div key='2'>
-                    <button className="btn-home btn-read" onClick={this.toggleDisplayBio}>Read More</button>
+                    <button className="btn-home btn-read" href='/#projects' onClick={this.toggleDisplayBio}>Read More</button>
                 </div>
             );
 

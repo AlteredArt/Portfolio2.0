@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PROJECTS from '../../data/projects';
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+// import Aos from 'aos';
+// import 'aos/dist/aos.css'
 
 
 const Project = props => {
@@ -11,12 +11,12 @@ const Project = props => {
         <div className='single-block-home'>
             <h1 className="sub-title-home ">{title}</h1>
             <a href={demo}><img src={image} alt="profile" className='single-img-home ' /></a>
-            <h6 className="desText-home ">STACK: {stack}</h6>
-            <p className='desText-home ' >{description}</p>
+            <h1 className="stack-des-home ">STACK: {stack}</h1>
+            <h1 className='desText-home ' >{description}</h1>
             <a href={code}><button className='btn-home ' >Code!</button></a>
-            <a href={github}><button className='btn-home '  >GITHUB!</button></a>
+            <a href={github}><button className='btn-home '  >GitHub!</button></a>
             <br />
-            <a href={demo}><button className='btn-home '>DEMO!</button></a>
+            <a href={demo}><button className='btn-home '>Demo!</button></a>
         </div>
     )
 }
@@ -24,24 +24,27 @@ const Project = props => {
 
 
 export default function ProjectsHome() {
-    useEffect(() => {
-        Aos.init({ duration: 500 });
-    }, [])
+    // useEffect(() => {
+    //     Aos.init({ duration: 500 });
+    // }, [])
     return (
-        <div>
+        <div id='projects'>
             <h2 className="title-home">Projects! </h2>
             <a href='/projectspage'><button className="btn-home">MORE PROJECTS</button></a>
-            <div data-aos='fade-right'>
+            <div>
                 {
                     PROJECTS.slice(0, 2).map(PROJECT => (
                         <Project key={PROJECT.id} project={PROJECT} />
                     ))
                 }
             </div>
-            <hr data-aos="slide-left" />
+            <hr />
         </div>
     )
 }
+// <div data-aos='fade-right'>
+
+// <hr data-aos="slide-left" />
 
 
 // Page

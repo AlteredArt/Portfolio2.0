@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import GRAPHICS from '../../data/graphics';
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+// import Aos from 'aos';
+// import 'aos/dist/aos.css'
 
 const Graphic = props => {
     const { image } = props.graphic;
@@ -17,24 +17,27 @@ const Graphic = props => {
 
 
 export default function GraphicsHome() {
-    useEffect(() => {
-        Aos.init({ duration: 500 });
-    }, [])
+    // useEffect(() => {
+    //     Aos.init({ duration: 500 });
+    // }, [])
     return (
         <div>
             <h2 className="title-home">Graphics!</h2>
             <a href='/graphicspage'><button className="btn-home">MORE GRAPHICS</button></a>
-            <div data-aos='fade-in'>
+            <div >
                 {
                     GRAPHICS.slice(0, 2).map(GRAPHIC => (
                         <Graphic key={GRAPHIC.id} graphic={GRAPHIC} />
                     ))
                 }
             </div>
-            <hr data-aos='slide-left' />
+            <hr />
         </div>
     )
 }
+// <div data-aos='fade-in'>
+// <hr data-aos='slide-left' />
+
 
 //page
 const GraphicPage = props => {
