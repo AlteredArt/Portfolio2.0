@@ -63,7 +63,7 @@ export default function NavBar({ children }) {
                                     <a className="dropdown-item h3" href="/quotes">Quotes</a>
                                 </div>
                             </li>
-
+                            <div className="dropdown-divider"></div>
                             <div className='nav-icons-dropdown'>
                                 <a href="https://www.linkedin.com/in/jared-matta/" ><img className='nav-logo-drop linkedin' src='https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Personal/linkedin.png' alt='icon' /></a>
                                 <a href="https://github.com/AlteredArt" ><img className='nav-logo-drop github' src='https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Personal/github.png' alt='icon' /></a>

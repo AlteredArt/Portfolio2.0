@@ -1,7 +1,7 @@
 const BLOGS = [
     {
         id: 1,
-        title: "AWS Database Services",
+        title: "AWS Databases",
         description: "Amazons Database Services",
         link: 'https://medium.com/@cherokeedreemer/aws-database-services-how-can-it-help-your-company-e073f8effe99',
         image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Blogs/awsdatabase'

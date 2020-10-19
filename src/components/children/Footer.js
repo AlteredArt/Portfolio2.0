@@ -13,7 +13,7 @@ export default function Footer() {
     return (
         <div>
             <h2 className="title-home"> Connect With Me!</h2>
-            <div>
+            <div className='footer'>
                 {
                     SOCIALS.map(SOCIAL => (
                         <Social key={SOCIAL.id} social={SOCIAL} />

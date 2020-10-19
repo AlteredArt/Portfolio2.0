@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
 //aos animation
-import Aos from 'aos';
-import 'aos/dist/aos.css'
+// import Aos from 'aos';
+// import 'aos/dist/aos.css'
 //Apis to fetch
-const API = 'https://programming-quotes-api.herokuapp.com/quotes/random';
-const APIMulti = 'https://programming-quotes-api.herokuapp.com/quotes/page/2';
+
 
 
 //quote render
+const API = 'https://programming-quotes-api.herokuapp.com/quotes/random';
+
 const Quote = ({ quote: { en, author } }) => (
-    <p className='generalText'>{en} <em>{author}</em></p>
+    <h1 className='generalText'>{en} <em>{author}</em></h1>
 )
 
-//guotes for home page
+//quotes for home page
 export default class QuotesHome extends Component {
     state = { quote: {}, quotes: [] };
 
     //aos animation
     componentDidMount() {
         this.fetchQuote()
-        Aos.init({ duration: 3000 });
     }
+    // Aos.init({ duration: 3000 });
 
     //fetching single random quotes
     fetchQuote = () => {
@@ -33,17 +34,20 @@ export default class QuotesHome extends Component {
         return (
             <div >
                 <h2 className="title-home">Your Quote!</h2>
-                <a href="/quotespage"><button className="btn-home">MORE QUOTES</button></a>
+                <a href="/quotes"><button className="btn-home">MORE QUOTES</button></a>
                 <Quote quote={this.state.quote} />
-                <hr data-aos='slide-right' />
+                <hr />
             </div>
         )
     }
 }
+// <hr data-aos='slide-right' />
+
 
 
 
 //quotes for quote page
+const APIMulti = 'https://programming-quotes-api.herokuapp.com/quotes/page/2';
 export class QuotesPage extends Component {
     state = { quote: {}, quotes: [] };
     //fetch quotes
