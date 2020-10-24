@@ -27,7 +27,7 @@ export default function BlogsHome() {
     return (
         <div>
             <h2 className="title-home">Blogs!</h2>
-            <a href="/blogs"><button className="btn-home">MORE BLOGS</button></a>
+            <a href="/blogs"><button className="btn-more">MORE BLOGS</button></a>
             <div data-aos='fade-up-right'>
                 {
                     BLOGS.slice(0, 2).map(BLOG => (

@@ -113,8 +113,8 @@ span.navbar-toggler-icon{
   .nav-logo{
     margin-left: 30px;
     margin-right: 30px;
-    width:40px;
-    height: 40px;
+    width:35px;
+    height: 35px;
   }
   .nav-logo:hover{
     background-color: whitesmoke;
@@ -127,8 +127,8 @@ span.navbar-toggler-icon{
   .nav-logo{
     margin-left: 20px;
     margin-right: 20px;
-    width:30px;
-    height: 30px;
+    width:25px;
+    height: 25px;
   }
   
 }
@@ -139,8 +139,8 @@ span.navbar-toggler-icon{
 }
 .nav-logo-drop{
   margin: 20px;
-  width:30px;
-  height: 30px;
+  width:25px;
+  height: 25px;
 }
 .nav-logo-drop:hover{
   background-color: whitesmoke;

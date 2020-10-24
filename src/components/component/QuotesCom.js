@@ -35,7 +35,7 @@ export default class QuotesHome extends Component {
         return (
             <div >
                 <h2 className="title-home">Your Quote!</h2>
-                <a href="/quotes"><button className="btn-home">MORE QUOTES</button></a>
+                <a href="/quotes"><button className="btn-more" style={{ marginBottom: '2%' }}>MORE QUOTES</button></a>
                 <Quote quote={this.state.quote} />
                 <hr data-aos='slide-right' />
             </div>

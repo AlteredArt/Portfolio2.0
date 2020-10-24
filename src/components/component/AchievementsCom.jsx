@@ -26,7 +26,7 @@ export default function AchievementsHome() {
     return (
         <div>
             <h2 className="title-home">Achievements!</h2>
-            <a href='/achievements'><button className="btn-home" >MORE ACHIEVEMENTS</button></a>
+            <a href='/achievements'><button className="btn-more" >MORE ACHIEVEMENTS</button></a>
             <div data-aos='fade-up-left'>
                 {
                     ACHIEVEMENTS.slice(0, 2).map(ACHIEVEMENT => (

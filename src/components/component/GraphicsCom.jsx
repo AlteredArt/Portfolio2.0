@@ -24,7 +24,7 @@ export default function GraphicsHome() {
     return (
         <div>
             <h2 className="title-home">Graphics!</h2>
-            <a href='/graphics'><button className="btn-home">MORE GRAPHICS</button></a>
+            <a href='/graphics'><button className="btn-more">MORE GRAPHICS</button></a>
             <div data-aos='fade-in'>
                 {
                     GRAPHICS.slice(0, 2).map(GRAPHIC => (
