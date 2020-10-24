@@ -2,7 +2,7 @@
 .main-title {
   font-size: 5vw;
   font-weight: bolder;
-  padding-top: 60px;
+  padding-top: 50px;
   text-shadow: 1px 1px greenyellow;
 }
 /* titles animation */
@@ -10,7 +10,7 @@
   opacity: 0;
   animation-name: fade-out;
   animation-duration: 2s;
-  font-size: 6vw;
+  font-size: 5vw;
   transition: ease-out;
   color: greenyellow;
   padding-top: 1%;
@@ -21,7 +21,7 @@
   opacity: 100;
   animation-name: fade-in;
   animation-duration: 2s;
-  font-size: 6vw;
+  font-size: 5vw;
   transition: ease-in;
   color: greenyellow;
   padding-top: 1%;
@@ -40,16 +40,25 @@
 
 /* profile pic */
 .profilePic{
-  width: 40%;
-  height: 30%;
+  width: 35%;
+  height: 25%;
   border-radius: 75px;
   margin-bottom: 1%;
   margin-top: 1%;
 }
 /* read more button */
-.btn-read{
-  margin-top: 1%;
-  margin-bottom: 1%;
+.btn-more{
+ 
+  border-radius: 50px;
+  background-color: black;
+  border: 2px solid whitesmoke;
+  color: greenyellow;
+  font-size: 1.2vw;
+  padding: 0.7%;
+}
+.aboutMe{
+  font-size: 2vw;
+  color: whitesmoke;
 }
 /* general text */
 .generalText{
@@ -65,9 +74,9 @@
 
 /* titles */
 .title-home {
-  font-size: 6vw;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  font-size: 5vw;
+  padding-top: 1%;
+  padding-bottom: 1%;
   text-shadow: 1px 1px greenyellow;
 }
 
@@ -75,12 +84,12 @@
 
 /* sub titles */
 .sub-title-home {
-  font-size: 4vw;
+  font-size: 3vw;
   /* font-weight: 900; */
   color: black;
 }
 .stack-des-home{
-font-size: 3vw;
+font-size: 2vw;
 color:black;
 padding-top: 3%;
 }
@@ -96,7 +105,7 @@ padding-top: 3%;
 .single-block-home{
   display: inline-block;
   width: 30vw;
-  margin: 5%;
+  margin: 3%;
   background-color: lightgray;
   border-radius: 50px;
   padding: 5px;
@@ -110,9 +119,8 @@ padding-top: 3%;
 }
 /* single image */
 .single-img-home{
-  width: 20vw;
-  height: 20%;
-  /* height: 20vh; */
+  width: 360px;
+  height: 220px;
   box-shadow: 1px 1px 4px 4px black;
   cursor: pointer;
 }
@@ -120,13 +128,12 @@ padding-top: 3%;
 /* all buttons */
 .btn-home{
   border-radius: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 0.5%;
   background-color: black;
   border: 2px solid whitesmoke;
   color: greenyellow;
-  font-size: 2vw;
-  font-weight: bolder;
-  padding: 1%;
+  font-size: 1.5vw;
+  padding: 1.5%;
 }
 .btn-home:hover{
   background-color: greenyellow;
@@ -135,93 +142,15 @@ padding-top: 3%;
 }
 
 
-/* 
-
-@media (max-width: 1615px){
-.single-block-home{
-  width: 600px;
-}
-.single-img-home{
-  width: 500px;
-  height: 300px;
-}
-}
-
-@media (max-width: 1404px){
-  .single-block-home{
-    width: 550px;
-  }
+@media (max-width: 834px){
   .single-img-home{
-    width: 450px;
-    height: 300px;
+    width: 180px;
+    height: 120px;
   }
 }
-@media (max-width: 1300px){
-  .single-block-home{
-    width: 530px;
-  }
- 
-}
-@media (max-width: 1259px){
-  .single-block-home{
-    width: 500px;
-  }
-  
+@media (max-width: 415px){
   .single-img-home{
-    width: 400px;
+    width: 60px;
+    height: 60px;
   }
 }
-@media (max-width: 1194px){
-  .single-block-home{
-    width: 450px;
-  }
-  
-  .single-img-home{
-    width: 360px;
-    height: 260px;
-  }
-  
- 
-}
-@media (max-width: 1088px){
-  .single-block-home{
-    width: 430px;
-  }
-  
-  .single-img-home{
-    width: 330px;
-   
-  }
- 
-}
-@media (max-width: 1047px){
-  .single-block-home{
-    width: 420px;
-  }
-  
-  
-}
-@media (max-width: 1025px){
-  .single-block-home{
-    width: 490px;
-  }
-  .single-img-home{
-    width: 360px;
-    height: 240px;
-  }
- 
-}
-@media (max-width: 580px){
-  .single-block-home{
-    width: 400px;
-  }
-  .single-img-home{
-    width: 340px;
-    height: 240px;
-  }
-  
- 
-}
-
-
-   */

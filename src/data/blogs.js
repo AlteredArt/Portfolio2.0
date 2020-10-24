@@ -9,7 +9,7 @@ const BLOGS = [
     {
         id: 2,
         title: "Graph QL Vs. REST",
-        description: "Why GraphQl is better than RESTful API",
+        description: "GraphQl compared to RESTful API",
         link: 'https://medium.com/@cherokeedreemer/graphql-better-than-the-rest-2818e7f50063',
         image: 'https://jared-mattas-portfolio.s3-us-west-1.amazonaws.com/Blogs/GraphQL.jpg'
     },

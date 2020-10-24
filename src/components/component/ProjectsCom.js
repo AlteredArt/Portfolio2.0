@@ -9,10 +9,10 @@ const Project = props => {
 
     return (
         <div className='single-block-home'>
-            <h1 className="sub-title-home ">{title}</h1>
+            <h4 className="sub-title-home ">{title}</h4>
             <a href={demo}><img src={image} alt="profile" className='single-img-home ' /></a>
-            <h1 className="stack-des-home ">STACK: {stack}</h1>
-            <h1 className='desText-home ' >{description}</h1>
+            <h6 className="stack-des-home ">STACK: {stack}</h6>
+            <h6 className='desText-home ' >{description}</h6>
             <a href={code}><button className='btn-home ' >Code!</button></a>
             <a href={github}><button className='btn-home '  >GitHub!</button></a>
             <br />
@@ -31,7 +31,7 @@ export default function ProjectsHome() {
     return (
         <div id='projects'>
             <h2 className="title-home">Projects! </h2>
-            <a href='/projects'><button className="btn-home">MORE PROJECTS</button></a>
+            <a href='/projects'><button className="btn-more">MORE PROJECTS</button></a>
             <div data-aos='fade-right'>
                 {
                     PROJECTS.slice(0, 2).map(PROJECT => (

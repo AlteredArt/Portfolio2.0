@@ -11,6 +11,7 @@ import Footer from '../children/Footer';
 import NavBar from '../children/Navbar';
 import TitlesHome from './TitlesHome';
 import BioHome from './BioHome';
+import Github from './github'
 //aos
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -34,6 +35,7 @@ export default function Home() {
             <BlogsHome />
             <AchievementsHome />
             <GraphicsHome />
+            <Github />
             <QuotesHome />
             <Footer />
         </div>
