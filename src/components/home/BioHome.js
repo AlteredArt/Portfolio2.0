@@ -20,7 +20,7 @@ class Bio extends React.Component {
 
                 </div>
                 <ul className='accomplishedList'>
-                    <li>Responsive CSS3 with animations</li>
+                    <li className='accomplishedList__item'>Responsive CSS3 with animations</li>
                     <li>Async Fetching from a Database</li>
                     <li>Class & Functional State & Props</li>
                     <li>Class & Functional Components</li>

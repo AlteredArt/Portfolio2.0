@@ -23,16 +23,14 @@ export default function App() {
 
 
   // display intro conditional
-  let intro = displayIntro ? (
-    <Intro key='1' />
-  ) : (
-      //redirect to home page after intro
-      //prevents intro from being replayed
-      <Redirect to='/home' key='2' />
-    );
-
-
-  return ([intro]);
+  // TODO: You can just return right here, don't need to introduce indirection
+  return displayIntro ? (
+    <Intro />
+    ) : (
+    //redirect to home page after intro
+    //prevents intro from being replayed
+    <Redirect to='/home' />
+  );
 }
 
 
