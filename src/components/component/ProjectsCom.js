@@ -32,7 +32,14 @@ export default function ProjectsHome() {
         <div id='projects'>
             <h2 className="title-home">Projects! </h2>
             <a href='/projects'><button className="btn-more">MORE PROJECTS</button></a>
-            <div data-aos='fade-right'>
+            {/*
+              TODO: Add class and flex styling
+
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+            */}
+            <div className="add-class-here" data-aos='fade-right'>
                 {
                     PROJECTS.slice(0, 2).map(PROJECT => (
                         <Project key={PROJECT.id} project={PROJECT} />
@@ -53,7 +60,7 @@ const ProjectPage = props => {
     return (
         <div className='single-block-page'>
             <h1 className="sub-title-page ">{title}</h1>
-            <a href={demo}><img src={image} alt="profile" className='single-img-page ' /></a>
+            <a href={demo}><img src={image} alt="profile" className='single-img-page' /></a>
             <h6 className="desText-page ">STACK: {stack}</h6>
             <p className='desText-page ' >{description}</p>
             <a href={code}><button className='btn-page ' >Code!</button></a>
@@ -73,13 +80,15 @@ export function ProjectsForPage() {
     return (
         <div>
             <h2 class="title-page">Projects!</h2>
-            <div>
+            <ul className="projects-wrapper de-list">
                 {
                     PROJECTS.map(PROJECT => (
-                        <ProjectPage key={PROJECT.id} project={PROJECT} />
+                      <li className="projects-wrapper__item" key={PROJECT.id}>
+                        <ProjectPage project={PROJECT} />
+                      </li>
                     ))
                 }
-            </div>
+            </ul>
             <hr />
             <a href="/home"><button className="btn-page">HOME</button></a>
 

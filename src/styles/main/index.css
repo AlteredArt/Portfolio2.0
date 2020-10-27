@@ -11,6 +11,7 @@
 }
 
 html {
+  /*font-size: 62.5%; allows easy REM to PX calculations (1rem:10px scale)*/
   overflow-x: hidden;
 }
 /* body */
@@ -21,6 +22,10 @@ body {
   font-family: 'RobotoCondensed';
   background-color: black;
   color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* hr */
@@ -34,10 +39,10 @@ hr {
 
 
 /* footer icon */
-.footer-icon { 
-  margin: 15px; 
-  width: 35px; 
-  height: 35px; 
+.footer-icon {
+  margin: 15px;
+  width: 35px;
+  height: 35px;
   background-color: whitesmoke;
 }
 /* on footer icon hover */
@@ -50,7 +55,7 @@ hr {
 
 
 @media(max-width: 700px){
-.footer { 
+.footer {
   margin-bottom: 13%;
 }
 }
