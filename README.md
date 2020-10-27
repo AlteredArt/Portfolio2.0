@@ -1,4 +1,5 @@
 hello
+weelcome to my portfolio 2.0. Where I use the skills i've learned to make a realistic React app, that takes part in most things need for your typical app.
 needs work on styling in home section / page section / titles and navbar.
 trying to figure out when to use percentages / rems /em /vw / vh 
 I experimented with percentages and vw on the home page, but not the pages themselves.
@@ -22,3 +23,5 @@ for overflow on
 html {
     overflow-x: hidden;
 }
+
+https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
