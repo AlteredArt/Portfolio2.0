@@ -1,15 +1,10 @@
 hello
-weelcome to my portfolio 2.0. Where I use the skills i've learned to make a realistic React app, that takes part in most things need for your typical app.
+Welcome to my portfolio 2.0. Where I use the skills i've learned to make a realistic React app, that takes part in most things need for your typical app.
 needs work on styling in home section / page section / titles and navbar.
 trying to figure out when to use percentages / rems /em /vw / vh 
 I experimented with percentages and vw on the home page, but not the pages themselves.
 
-    rem is relational to the base html. 
-    I know the base html has a set default but does it help if the font size is set in your personal html?
 
-    em is in relation to it's parent component
-
-    Neither em or rem seem to scale very well
     
     vw works best for scaling but gets way to small on smaller screen, maybe set a break point for just that
 
@@ -25,3 +20,7 @@ html {
 }
 
 https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
+
+
+fix the card and width adjustment.
+use rem and percentages 
