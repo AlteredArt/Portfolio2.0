@@ -24,3 +24,10 @@ https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6
 
 fix the card and width adjustment.
 use rem and percentages 
+
+apply notes added from David,
+
+remove picture
+remove titles
+
+make header better
